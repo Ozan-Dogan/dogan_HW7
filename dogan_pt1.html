@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Part 1 | University Feedback</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+<div class="container">
     <form class="form-container">
         <h2>Part 1: Basic Information</h2>
-
         <div class="form-field">
-            <label for="country">Home Country:</label>
-            <select name="country" id="country-select" autofocus>
+            <label for="hometown">Home Country:</label>
+            <select name="country" id="country-select" required autofocus>
                 <option value="">-- choose country --</option>
                 <option value="US">United States</option>
                 <option value="ME">Mexico</option>
                 <option value="CA">Canada</option>
             </select>
         </div>
-
         <div class="form-field">
             <label for="state">Home State:</label>
-            <select name="state" id="state-select">
+            <select name="state" id="state-select" required>
                 <option value="">-- choose state/territory --</option>
                 <option value="AL">AL</option>
                 <option value="AK">AK</option>
@@ -85,16 +84,16 @@
                 <option value="VI">VI - U.S. Virgin Islands</option>
             </select>
         </div>
-
         <div class="form-field">
-            <label for="hometown">Hometown:</label>
-            <input type="text" id="hometown" name="hometown" required>
-            <div class="tooltip">?
+            <div class="tooltip"><i class="fas fa-question-circle"></i>
                 <span class="tooltiptext">Enter the city or town where you spent most of your childhood.</span>
             </div>
+            <label for="hometown">Hometown:</label>
+            <input type="text" id="hometown" name="hometown" required>
         </div>
         <a href="dogan_pt2.html" class="button">Next</a>
     </form>
-    </div>
+</div>
 </body>
 </html>
+
